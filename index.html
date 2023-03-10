@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Uniswap Interface for Atomic Swaps</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Uniswap Interface for Atomic Swaps</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Swap Tokens</h2>
+			<form>
+				<label for="fromToken">From Token:</label>
+				<select id="fromToken">
+					<option value="ETH">ETH</option>
+					<option value="USDT">USDT</option>
+					<option value="DAI">DAI</option>
+				</select>
+
+				<label for="toToken">To Token:</label>
+				<select id="toToken">
+					<option value="ETH">ETH</option>
+					<option value="USDT">USDT</option>
+					<option value="DAI">DAI</option>
+				</select>
+
+				<label for="amount">Amount:</label>
+				<input type="number" id="amount">
+
+				<button type="submit">Swap</button>
+			</form>
+		</section>
+		<section>
+			<h2>Swap History</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Transaction Hash</th>
+						<th>From Token</th>
+						<th>To Token</th>
+						<th>Amount</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>0xabcdef1234567890</td>
+						<td>ETH</td>
+						<td>DAI</td>
+						<td>1.0</td>
+						<td>Completed</td>
+					</tr>
+					<tr>
+						<td>0x1234567890abcdef</td>
+						<td>DAI</td>
+						<td>ETH</td>
+						<td>2.5</td>
+						<td>Pending</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2023</p>
+	</footer>
+	<script src="app.js"></script>
+</body>
+</html>
